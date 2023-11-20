@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6841A6D42B0BEDDE00510013 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6841A6D32B0BEDDE00510013 /* AuthManager.swift */; };
 		685AC5F62B069A4000CAB0D1 /* SolidConcepts_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685AC5F52B069A4000CAB0D1 /* SolidConcepts_SwiftUIApp.swift */; };
 		685AC5F82B069A4000CAB0D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685AC5F72B069A4000CAB0D1 /* ContentView.swift */; };
 		685AC5FA2B069A4200CAB0D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 685AC5F92B069A4200CAB0D1 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6841A6D32B0BEDDE00510013 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		685AC5F22B069A4000CAB0D1 /* SolidConcepts-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SolidConcepts-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		685AC5F52B069A4000CAB0D1 /* SolidConcepts_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidConcepts_SwiftUIApp.swift; sourceTree = "<group>"; };
 		685AC5F72B069A4000CAB0D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +34,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6841A6CF2B0BE70D00510013 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				685AC5F72B069A4000CAB0D1 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6841A6D02B0BE71A00510013 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6841A6D12B0BE72500510013 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6841A6D22B0BEDCA00510013 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6841A6D32B0BEDDE00510013 /* AuthManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		685AC5E92B069A4000CAB0D1 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +83,11 @@
 		685AC5F42B069A4000CAB0D1 /* SolidConcepts-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				6841A6D22B0BEDCA00510013 /* Services */,
+				6841A6D12B0BE72500510013 /* Models */,
+				6841A6D02B0BE71A00510013 /* ViewModels */,
+				6841A6CF2B0BE70D00510013 /* Views */,
 				685AC5F52B069A4000CAB0D1 /* SolidConcepts_SwiftUIApp.swift */,
-				685AC5F72B069A4000CAB0D1 /* ContentView.swift */,
 				685AC5F92B069A4200CAB0D1 /* Assets.xcassets */,
 				685AC5FB2B069A4200CAB0D1 /* Preview Content */,
 			);
@@ -138,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				685AC5F82B069A4000CAB0D1 /* ContentView.swift in Sources */,
+				6841A6D42B0BEDDE00510013 /* AuthManager.swift in Sources */,
 				685AC5F62B069A4000CAB0D1 /* SolidConcepts_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
