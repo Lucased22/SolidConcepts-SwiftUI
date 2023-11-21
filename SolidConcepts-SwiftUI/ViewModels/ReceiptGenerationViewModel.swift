@@ -6,18 +6,14 @@
 //
 
 import Foundation
-import Foundation
 
-protocol ReceiptGenerationProtocol {
-    func generateReceipt(orderID: String, amount: Double) -> String
-}
 
 class ReceiptGenerationViewModel: ObservableObject {
-    private let receiptGenerationService: ReceiptGenerationProtocol
-
+    private let receiptGenerationService: ReceiptGenerationService
     @Published var receipt: String?
+    
 
-    init(receiptGenerationService: ReceiptGenerationProtocol) {
+    init(receiptGenerationService: ReceiptGenerationService) {
         self.receiptGenerationService = receiptGenerationService
     }
 

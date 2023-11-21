@@ -8,18 +8,20 @@
 import Foundation
 
 class AuthenticationViewModel: ObservableObject {
-    private let authenticationService: AuthenticationProtocol
-
     @Published var isAuthenticated: Bool = false
-
-    init(authenticationService: AuthenticationProtocol) {
+    weak var coordinator: CoordinatorProtocol?
+    private var authenticationService: AuthenticationService
+    
+    init(authenticationService: AuthenticationService) {
         self.authenticationService = authenticationService
     }
-
+    
+    
     func authenticate() {
         isAuthenticated = authenticationService.authenticate(user: "user123", password: "password")
+        coordinator?.navigateToPayment()
     }
-
+    
     func resetAuthentication() {
         isAuthenticated = false
     }

@@ -6,6 +6,8 @@
 //
 import SwiftUI
 
+import SwiftUI
+
 struct PaymentMethodView: View {
     @ObservedObject var viewModel: PaymentMethodViewModel
 
@@ -17,10 +19,12 @@ struct PaymentMethodView: View {
                 viewModel.processPayment()
             }
             .padding()
-        }
-        .onAppear {
-            viewModel.resetPaymentProcessing()
+
+            NavigationLink(
+                destination: ReceiptGenerationView(viewModel: ReceiptGenerationViewModel(receiptGenerationService: ReceiptGenerationService())),
+                isActive: $viewModel.isPaymentSuccessful,
+                label: { EmptyView() }
+            )
         }
     }
 }
-

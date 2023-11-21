@@ -8,20 +8,25 @@
 import Foundation
 import SwiftUI
 
+import SwiftUI
+
 struct AuthenticationView: View {
     @ObservedObject var viewModel: AuthenticationViewModel
-
+    
     var body: some View {
         VStack {
             Text("Authentication View")
-
+            
             Button("Authenticate") {
                 viewModel.authenticate()
             }
             .padding()
-        }
-        .onAppear {
-            viewModel.resetAuthentication()
+            
+            NavigationLink(
+                destination: PaymentMethodView(viewModel: PaymentMethodViewModel(paymentMethodService: PaymentMethodService())),
+                isActive: $viewModel.isAuthenticated,
+                label: { EmptyView() }
+            )
         }
     }
 }

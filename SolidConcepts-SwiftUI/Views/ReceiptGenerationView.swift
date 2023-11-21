@@ -8,6 +8,8 @@
 import Foundation
 import SwiftUI
 
+import SwiftUI
+
 struct ReceiptGenerationView: View {
     @ObservedObject var viewModel: ReceiptGenerationViewModel
 
@@ -15,12 +17,7 @@ struct ReceiptGenerationView: View {
         VStack {
             Text("Receipt Generation View")
 
-            if let receipt = viewModel.receipt {
-                Text("Receipt: \(receipt)")
-            }
-        }
-        .onAppear {
-            viewModel.generateReceipt()
+            // mostrar o recibo
         }
     }
 }
