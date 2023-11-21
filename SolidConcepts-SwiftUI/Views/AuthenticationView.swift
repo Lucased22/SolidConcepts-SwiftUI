@@ -8,8 +8,6 @@
 import Foundation
 import SwiftUI
 
-import SwiftUI
-
 struct AuthenticationView: View {
     @ObservedObject var viewModel: AuthenticationViewModel
     

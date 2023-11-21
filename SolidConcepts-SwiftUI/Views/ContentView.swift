@@ -12,11 +12,11 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             if !coordinator.isAuthenticated {
-                AuthenticationView(viewModel: AuthenticationViewModel(authenticationService: AuthenticationService(), coordinator: coordinator))
+                AuthenticationView(viewModel: AuthenticationViewModel(authenticationService: AuthenticationService()))
             } else if !coordinator.isPaymentSuccessful {
-                PaymentMethodView(viewModel: PaymentMethodViewModel(paymentMethodService: PaymentMethodService(), coordinator: coordinator))
+                PaymentMethodView(viewModel: PaymentMethodViewModel(paymentMethodService: PaymentMethodService()))
             } else {
-                ReceiptGenerationView(viewModel: ReceiptGenerationViewModel(receiptGenerationService: ReceiptGenerationService(), coordinator: coordinator))
+                ReceiptGenerationView(viewModel: ReceiptGenerationViewModel(receiptGenerationService: ReceiptGenerationService()))
             }
         }
         .environmentObject(coordinator)

@@ -5,6 +5,7 @@
 //  Created by Lucas Santos on 20/11/23.
 //
 import Foundation
+import Combine
 import SwiftUI
 
 protocol CoordinatorProtocol: AnyObject {
