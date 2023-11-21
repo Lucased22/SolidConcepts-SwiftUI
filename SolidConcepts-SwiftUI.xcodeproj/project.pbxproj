@@ -18,6 +18,9 @@
 		68CDC0222B0C29250059A56D /* PaymentProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CDC0212B0C29250059A56D /* PaymentProcessor.swift */; };
 		68CDC0242B0C2AD70059A56D /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CDC0232B0C2AD70059A56D /* AuthenticationViewModel.swift */; };
 		68CDC0262B0C2B470059A56D /* ReceiptGenerationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CDC0252B0C2B470059A56D /* ReceiptGenerationViewModel.swift */; };
+		68CDC0282B0C2E130059A56D /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CDC0272B0C2E130059A56D /* AuthenticationView.swift */; };
+		68CDC02A2B0C2E370059A56D /* PaymentMethodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CDC0292B0C2E370059A56D /* PaymentMethodView.swift */; };
+		68CDC02C2B0C2E610059A56D /* ReceiptGenerationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CDC02B2B0C2E610059A56D /* ReceiptGenerationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		68CDC0212B0C29250059A56D /* PaymentProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentProcessor.swift; sourceTree = "<group>"; };
 		68CDC0232B0C2AD70059A56D /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		68CDC0252B0C2B470059A56D /* ReceiptGenerationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptGenerationViewModel.swift; sourceTree = "<group>"; };
+		68CDC0272B0C2E130059A56D /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		68CDC0292B0C2E370059A56D /* PaymentMethodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodView.swift; sourceTree = "<group>"; };
+		68CDC02B2B0C2E610059A56D /* ReceiptGenerationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptGenerationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				685AC5F72B069A4000CAB0D1 /* ContentView.swift */,
+				68CDC0272B0C2E130059A56D /* AuthenticationView.swift */,
+				68CDC0292B0C2E370059A56D /* PaymentMethodView.swift */,
+				68CDC02B2B0C2E610059A56D /* ReceiptGenerationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,9 +208,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				68CDC0262B0C2B470059A56D /* ReceiptGenerationViewModel.swift in Sources */,
+				68CDC02A2B0C2E370059A56D /* PaymentMethodView.swift in Sources */,
 				68CDC01B2B0BF5370059A56D /* PaymentMethodService.swift in Sources */,
 				68CDC01F2B0C28CE0059A56D /* PaymentViewModel.swift in Sources */,
 				685AC5F82B069A4000CAB0D1 /* ContentView.swift in Sources */,
+				68CDC02C2B0C2E610059A56D /* ReceiptGenerationView.swift in Sources */,
+				68CDC0282B0C2E130059A56D /* AuthenticationView.swift in Sources */,
 				68CDC0222B0C29250059A56D /* PaymentProcessor.swift in Sources */,
 				68CDC0242B0C2AD70059A56D /* AuthenticationViewModel.swift in Sources */,
 				6841A6D42B0BEDDE00510013 /* AuthenticationService.swift in Sources */,
